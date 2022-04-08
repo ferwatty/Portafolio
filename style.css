@@ -78,6 +78,7 @@ picture {
   --font-size-6: 2.5rem;
   --font-size-fluid-1: clamp(1rem, 4vw, 1.5rem);
   --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
+  --font-size-fluid-4: clamp(3rem, 12vw, 19rem);
   --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
   /* 3. Layouts */
   --size-mobile: 414px;
@@ -118,8 +119,14 @@ h6 {
 }
 
 .titulo {
-  font-size: 70px;
-  margin-top: 160px;
+  display: grid;
+  align-items: end;
+  height: 90vh;
+}
+
+.titulo h1 {
+  font-size: var(--font-size-fluid-4);
+  height: 90vh;
 }
 
 .menu {
