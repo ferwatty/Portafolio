@@ -1,9 +1,14 @@
 /* Imports - Tipografía */
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
 
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 /* Reset */
@@ -46,6 +51,7 @@ picture {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -62,8 +68,8 @@ picture {
   --black: #000000;
   --white: #ffffff;
   /* 2. Tipografía */
-  --font-body: 'Inter var', sans-serif;
-  --font-headings: 'Bebas Neue',cursive;
+  --font-body: "Inter var", sans-serif;
+  --font-headings: "Bebas Neue", cursive;
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
   --font-size-3: 1.25rem;
@@ -85,6 +91,62 @@ body {
   color: var(--black);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-headings);
+}
+
+.menu {
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  margin-inline: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.banner {
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+.titulo {
+  font-size: 70px;
+  margin-top: 160px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  height: 90vh;
+  gap: 9px;
+  padding-inline: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* Aquí inicio 👇🏼 */
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.footer {
+  font-weight: bold;
+  font-size: 12px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
