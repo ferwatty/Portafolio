@@ -78,7 +78,7 @@ picture {
   --font-size-6: 2.5rem;
   --font-size-fluid-1: clamp(1rem, 4vw, 1.5rem);
   --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
-  --font-size-fluid-4: clamp(3rem, 12vw, 19rem);
+  --font-size-fluid-4: clamp(3rem, 28vw, 19rem);
   --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
   /* 3. Layouts */
   --size-mobile: 414px;
@@ -103,7 +103,7 @@ h6 {
 
 .menu {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,8 +114,11 @@ h6 {
 }
 
 .banner {
-  font-size: 10px;
-  margin-top: 30px;
+  font-size: 8px;
+  margin-top: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 30px;
 }
 
 .titulo {
@@ -125,6 +128,7 @@ h6 {
 }
 
 .titulo h1 {
+  padding-top: 320px;
   font-size: var(--font-size-fluid-4);
   height: 90vh;
 }
@@ -146,8 +150,8 @@ h6 {
   padding-bottom: 10px;
   /* Aquí inicio 👇🏼 */
 
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .footer {
@@ -156,4 +160,31 @@ h6 {
   margin: auto;
   margin-bottom: 20px;
   margin-left: 20px;
+}
+
+.proyecto {
+  position: relative;
+  width: 450px;
+  height: 280px;
+  border: 2px solid black;
+  display: flex;
+}
+
+.proyecto img {
+  width: 48%;
+  object-fit: cover;
+  border-right: 2px solid black;
+}
+
+.proyecto h2 {
+  font-size: 60px;
+  line-height: 1;
+  padding: 20px;
+}
+
+.proyecto .info {
+  position: absolute;
+  width: 35px;
+  right: 20px;
+  bottom: 15px;
 }
