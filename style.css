@@ -5,6 +5,7 @@ html {
   font-family: "Inter", sans-serif;
 }
 
+
 @supports (font-variation-settings: normal) {
   html {
     font-family: "Inter var", sans-serif;
@@ -69,7 +70,7 @@ picture {
   --white: #ffffff;
   /* 2. Tipografía */
   --font-body: "Inter var", sans-serif;
-  --font-headings: "Bebas Neue", cursive;
+  --font-headings: "Bebas Neue"Grand heavy;
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
   --font-size-3: 1.25rem;
@@ -78,7 +79,7 @@ picture {
   --font-size-6: 2.5rem;
   --font-size-fluid-1: clamp(1rem, 4vw, 1.5rem);
   --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
-  --font-size-fluid-4: clamp(3rem, 28vw, 19rem);
+  --font-size-fluid-4: clamp(3rem, 18vw, 19rem);
   --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
   /* 3. Layouts */
   --size-mobile: 414px;
@@ -103,7 +104,7 @@ h6 {
 
 .menu {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +115,7 @@ h6 {
 }
 
 .banner {
-  font-size: 8px;
+  font-size: 12px;
   margin-top: 20px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
@@ -124,13 +125,14 @@ h6 {
 .titulo {
   display: grid;
   align-items: end;
-  height: 90vh;
+  height: auto;
 }
 
 .titulo h1 {
-  padding-top: 320px;
+  padding-top: 300px;
   font-size: var(--font-size-fluid-4);
   height: 90vh;
+  text-align: center;
 }
 
 .menu {
@@ -143,16 +145,21 @@ h6 {
 
 .grid {
   display: grid;
-  height: 90vh;
-  gap: 9px;
+  height: auto;
+  width: 80vw;
+  margin: auto;
+  margin-top: 20px;
+  gap: 30px;
   padding-inline: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   /* Aquí inicio 👇🏼 */
-
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr 1fr; */
 }
+
+
 
 .footer {
   font-weight: bold;
@@ -163,8 +170,9 @@ h6 {
 }
 
 .proyecto {
+  margin-top: 40px;
   position: relative;
-  width: 450px;
+  width: auto;
   height: 280px;
   border: 2px solid black;
   display: flex;
@@ -178,6 +186,12 @@ h6 {
 
 .proyecto h2 {
   font-size: 60px;
+  line-height: 1;
+  padding: 20px;
+}
+
+.proyecto:nth-child(5) h2 {
+  font-size: 40px;
   line-height: 1;
   padding: 20px;
 }
