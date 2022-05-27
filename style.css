@@ -83,6 +83,13 @@ button {
   -moz-appearance: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+:hover {}
+
 /* Variables */
 :root {
   /* 1. Colores */
@@ -99,8 +106,8 @@ button {
   --font-size-6: 2.5rem;
   --font-size-fluid-1: clamp(1rem, 4vw, 1.5rem);
   --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
-  --font-size-fluid-4: clamp(3rem, 28vw, 19rem);
-  --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
+  --font-size-fluid-4: clamp(3rem, 20vw, 15rem);
+  --font-size-fluid-3: clamp(2rem, 15vw, 10rem);
   /* 3. Layouts */
   --size-mobile: 414px;
   --size-desktop: 1440px;
@@ -227,7 +234,7 @@ h6 {
 .home {
   position: relative;
   display: grid;
-  gap: 80px;
+  gap: 60px;
   margin: auto;
   overflow: hidden;
   border: 1px solid black;
@@ -241,8 +248,9 @@ h6 {
 }
 
 .home h1 {
-  font-size: 80px;
+  font-size: 100px;
   text-align: center;
+  font-size: var(--font-size-fluid-3);
 }
 
 .home-featured {
@@ -260,7 +268,7 @@ h6 {
 
 @media all and (max-width: 1920px) {
   .descripcion p {
-    padding: 40px;
+    padding: 60px;
     column-count: 2;
   }
 }
@@ -306,6 +314,7 @@ h6 {
   margin: auto;
   overflow: hidden;
   border: 1px solid black;
+  height: 100vh;
 }
 
 .home1 .back {
@@ -322,4 +331,24 @@ h6 {
 
 .home1-featured {
   object-fit: cover;
+}
+
+.contacto-grid {
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+  position: relative;
+  width: auto;
+  height: 350px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+}
+
+.contacto-grid img {
+  width: 48%;
+  object-fit: cover;
+  border-right: 2px solid black;
 }
