@@ -150,7 +150,7 @@ a::after {
 
 .atras .back:hover,
 .info:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 
@@ -236,6 +236,8 @@ h6 {
   align-items: center;
   max-width: 90vw;
   margin-inline: auto;
+  position: sticky;
+  top: 0px;
 }
 
 .grid {
@@ -334,26 +336,71 @@ h6 {
   border-top: 1px solid rgb(0, 0, 0);
 }
 
+.indice-burger {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.burger-mini {
+  width: 20px;
+}
+
+.burger {
+  display: none;
+  margin-left: 10px;
+}
+
+/* DESKTOP */
 @media all and (max-width: 1920px) {
   .descripcion p {
     padding: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
     column-count: 2;
   }
 }
 
+/* DESKTOP  IPAD*/
 @media all and (max-width: 1200px) {
   .descripcion p {
     padding: 40px;
     column-count: 2;
   }
+
 }
 
-@media all and (max-width: 840px) {
+/* MOVIL */
+@media all and (max-width: 600px) {
   .descripcion p {
     padding: 40px;
     column-count: 1;
   }
+
+  .burger {
+    display: inherit;
+    position: sticky;
+    top: 40px;
+    max-width: max-content;
+  }
+
+  .burger ul {
+    /* background-color: #ffffff; */
+  }
+
+  .burger li {
+    font-weight: bold;
+  }
+
+  .menu {
+    display: none;
+  }
+
+
 }
+
+
+
+
 
 .proyecto1 {
   margin-top: 40px;

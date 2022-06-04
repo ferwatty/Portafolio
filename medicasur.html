@@ -19,9 +19,35 @@
       <a href="/">
         <li>PORTAFOLIO</li>
       </a>
+      <a href="#proyectos">
+        <li>PROYECTOS</li>
+      </a>
+      <a href="./contacto.html">
+        <li>ABOUT</li>
+      </a>
       <li>2022</li>
     </ul>
   </nav>
+
+  <div x-data="{ open: false }" class="burger">
+    <div class="buton-burger" x-on:click="open = !open" @click.away="open = false">
+      <img class="burger-mini" src="menu.png" alt="burger">
+    </div>
+    <span x-show="open">
+      <ul class="indice-burger">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="/contacto.html">
+          <li>ABOUT</li>
+        </a>
+        </li>
+      </ul>
+    </span>
+  </div>
 
   <div class="home">
     <h1>Médica SUR</h1>
@@ -33,9 +59,10 @@
       src='https://res.cloudinary.com/ferwatty0/image/upload/v1652469703/portafolio%20web/gi_02_wqzp7x.jpg' alt=''
       width='800' height='450' lazy>
     <div class="descripcion">
-      <p>Rebranding para el hospital Médica Sur realizado en conjunto con estudiantes de CENTRO. La nueva imagen gira
-        entorno a los cinco valores sobre los que se cimienta su filosofía, mientras que representa un toque moderno,
-        amigable y funcional. </p>
+      <p>El objetivo de este proyecto fue desarrollar el Rebranding para el hospital Médica Sur. Éste fue realizado de
+        manera colectiva junto con estudiantes de CENTRO y en colaboración con la firma de diseño Chermayeff & Geismar &
+        Haviv. La nueva imagen gira entorno a los cinco valores sobre los que se cimienta su filosofía, mientras que
+        representa un toque moderno, amigable y funcional.</p>
     </div>
 
     <img src='https://res.cloudinary.com/ferwatty0/image/upload/v1652469159/portafolio%20web/Recurso_2_lup39z.jpg'

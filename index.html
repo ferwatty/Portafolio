@@ -8,6 +8,7 @@
   <title>Portafolio Fer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,9 +23,32 @@
       <a href="#proyectos">
         <li>PROYECTOS</li>
       </a>
+      <a href="./contacto.html">
+        <li>ABOUT</li>
+      </a>
       <li>2022</li>
     </ul>
   </nav>
+
+  <div x-data="{ open: false }" class="burger">
+    <div class="buton-burger" x-on:click="open = !open" @click.away="open = false">
+      <img class="burger-mini" src="menu.png" alt="burger">
+    </div>
+    <span x-show="open">
+      <ul class="indice-burger">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="/contacto.html">
+          <li>ABOUT</li>
+        </a>
+        </li>
+      </ul>
+    </span>
+  </div>
 
   <div class="fernanda">
     <img src="https://res.cloudinary.com/ferwatty0/image/upload/v1653868752/portafolio%20web/lol_y83o6p.jpg" alt="">
@@ -45,7 +69,8 @@
   <div class="grid" id="proyectos">
     <!-- Aquí inicio 👇🏼  -->
     <div class="proyecto">
-      <img src="https://res.cloudinary.com/ferwatty0/image/upload/v1651595397/portafolio%20web/cucho2_o5pqts.jpg"
+      <img
+        src="https://res.cloudinary.com/ferwatty0/image/upload/v1654196451/portafolio%20web/D41BB729-80A8-4708-B30F-1BBD07C775CD_rs4acv.jpg"
         alt="">
       <h2>RASHED & SMITH</h2>
       <a href="./rashed.html"><svg xmlns="http://www.w3.org/2000/svg" class="info" fill="none" viewBox="0 0 24 24"
@@ -110,8 +135,7 @@
   </div>
 
   <div class="footer">
-    <a href="./contacto.html">
-      <p>CONTACTO</p>
+    <p>CONTACTO</p>
     </a>
   </div>
 
