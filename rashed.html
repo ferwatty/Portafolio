@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Fer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <ul class="menu">
+      <a href="/">
+        <li>PORTAFOLIO</li>
+      </a>
+      <a href="#proyectos">
+        <li>PROYECTOS</li>
+      </a>
+      <a href="./contacto.html">
+        <li>ABOUT</li>
+      </a>
+      <li>2022</li>
+    </ul>
+  </nav>
+
+  <div x-data="{ open: false }" class="burger">
+    <div class="buton-burger" x-on:click="open = !open" @click.away="open = false">
+      <img class="burger-mini" src="menu.png" alt="burger">
+    </div>
+    <span x-show="open">
+      <ul class="indice-burger">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="/contacto.html">
+          <li>ABOUT</li>
+        </a>
+        </li>
+      </ul>
+    </span>
+  </div>
+
+  <div class="home">
+    <h1>RASHED & SMITH</h1>
+    <button class="atras" onclick="window.history.back()"><svg class="back" xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+      </svg></button>
+
+    <img class="home-featured"
+      src='https://res.cloudinary.com/ferwatty0/image/upload/v1654197670/portafolio%20web/029157F9-F535-4B1A-B370-63FDF54A9084_ssyexm.jpg'
+      alt='' width='800' height='450' lazy>
+    <div class="descripcion">
+      <p>El objetivo de este proyecto era diseñar una guía de viajes de lujo para la editorial Rashed & Smith que
+        permitiera transmitir una experiencia a través de imágenes, información y recorridos que fueran atractivos para
+        el viajero. Para esto se eligieron 3 rutas y con base en una investigación previa, crear un concepto editorial
+        para cumplir el objetivo. </p>
+    </div>
+
+    <img
+      src='https://res.cloudinary.com/ferwatty0/image/upload/v1654197218/portafolio%20web/Webp.net-gifmaker_tai8zn.gif'
+      alt='' width='800' height='auto'>
+
+    <img
+      src='https://res.cloudinary.com/ferwatty0/image/upload/v1654196451/portafolio%20web/92929CC7-6314-47D9-9C7A-F87B3E4A9B3F_bghhni.jpg'
+      alt=''>
+
+    <img
+      src='https://res.cloudinary.com/ferwatty0/image/upload/v1654196451/portafolio%20web/D41BB729-80A8-4708-B30F-1BBD07C775CD_rs4acv.jpg'
+      alt=''>
+    <img
+      src='https://res.cloudinary.com/ferwatty0/image/upload/v1654196451/portafolio%20web/E09DA8B1-FF8B-4A9F-8B27-BE2A6A3939EC_dorh6i.jpg'
+      alt=''>
+    <img
+      src='https://res.cloudinary.com/ferwatty0/image/upload/v1654196451/portafolio%20web/52ACA5A2-FAA0-4C4F-8932-9AF3A7F6A0D9_mj1myr.jpg'
+      alt=''>
+  </div>
+
+  <div class="footer">
+    <a href="./contacto.html">
+      <p>CONTACTO</p>
+    </a>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>
