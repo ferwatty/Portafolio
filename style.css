@@ -193,6 +193,15 @@ h6 {
   font-family: var(--font-headings);
 }
 
+
+.header {
+
+  height: 10%;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
 .menu {
   font-weight: bold;
   font-size: 14px;
@@ -217,38 +226,16 @@ h6 {
   height: 30px;
 }
 
-.titulo {
-  display: grid;
-  align-items: end;
-  height: auto;
-}
-
-.titulo h1 {
-  padding-top: 290px;
-  font-size: var(--font-size-fluid-4);
-  height: 90vh;
-  text-align: center;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 90vw;
-  margin-inline: auto;
-  position: sticky;
-  top: 0px;
-}
 
 .grid {
   display: grid;
   height: auto;
   width: 80vw;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 50px;
   gap: 30px;
   padding-inline: 10px;
-  padding-top: 10px;
+  padding-top: 23px;
   padding-bottom: 10px;
   /* Aquí inicio 👇🏼 */
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -311,16 +298,18 @@ h6 {
 }
 
 .home .back {
-  position: absolute;
+  position: fixed;
   left: 40px;
-  top: 40px;
+  top: 90px;
   height: 40px;
 }
 
 .home h1 {
+  padding-top: 30px;
   font-size: 100px;
   text-align: center;
   font-size: var(--font-size-fluid-3);
+  line-height: 100%;
 }
 
 .home-featured {
