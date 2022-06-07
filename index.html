@@ -14,21 +14,22 @@
 </head>
 
 <body>
-
-  <nav>
-    <ul class="menu">
-      <a href="/">
-        <li>PORTAFOLIO</li>
-      </a>
-      <a href="#proyectos">
-        <li>PROYECTOS</li>
-      </a>
-      <a href="./contacto.html">
-        <li>ABOUT</li>
-      </a>
-      <li>2022</li>
-    </ul>
-  </nav>
+  <div class="header">
+    <nav>
+      <ul class="menu">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="./index.html#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="./contacto.html">
+          <li>ABOUT</li>
+        </a>
+        <li>2022</li>
+      </ul>
+    </nav>
+  </div>
 
   <div x-data="{ open: false }" class="burger">
     <div class="buton-burger" x-on:click="open = !open" @click.away="open = false">
@@ -103,7 +104,7 @@
 
     <div class="proyecto">
       <img
-        src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/2056/posts/34098/image/Experimental-design10-R.jpg"
+        src="https://res.cloudinary.com/ferwatty0/image/upload/v1654562587/portafolio%20web/Captura_de_Pantalla_2022-06-06_a_la_s_19.41.47_vbzvyk.png"
         alt="">
       <h2>ARIEL GUZIK</h2>
       <a href="./guzik.html"><svg xmlns="http://www.w3.org/2000/svg" class="info" fill="none" viewBox="0 0 24 24"
@@ -135,7 +136,8 @@
   </div>
 
   <div class="footer">
-    <p>CONTACTO</p>
+    <a href="./contacto.html">
+      <p>CONTACTO</p>
     </a>
   </div>
 
