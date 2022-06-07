@@ -10,19 +10,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
-<body>
+<body class="proyecto-i">
+  <div class="header">
+    <nav>
+      <ul class="menu">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="./index.html#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="./contacto.html">
+          <li>ABOUT</li>
+        </a>
+        <li>2022</li>
+      </ul>
+    </nav>
+  </div>
 
-  <nav>
-    <ul class="menu">
-      <a href="/">
-        <li>PORTAFOLIO</li>
-      </a>
-
-      <li>2022</li>
-    </ul>
-  </nav>
+  <div x-data="{ open: false }" class="burger">
+    <div class="buton-burger" x-on:click="open = !open" @click.away="open = false">
+      <img class="burger-mini" src="menu.svg" alt="burger">
+    </div>
+    <span x-show="open">
+      <ul class="indice-burger">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="/contacto.html">
+          <li>ABOUT</li>
+        </a>
+        </li>
+      </ul>
+    </span>
+  </div>
 
   <div class="home">
     <h1>MASKA</h1>
@@ -55,11 +82,17 @@
       src='https://res.cloudinary.com/ferwatty0/image/upload/v1652466511/portafolio%20web/Maska_japonesa_1__page-0007_g1ox2t.jpg'
       alt='' width='800'>
 
+    <img
+      src='https://res.cloudinary.com/ferwatty0/image/upload/v1654621204/portafolio%20web/Captura_de_Pantalla_2022-06-07_a_la_s_11.59.30_ufxdf4.png'
+      alt='' width='800'>
+
     <img src='https://res.cloudinary.com/ferwatty0/image/upload/v1652467785/portafolio%20web/IMG_2738_1_wd1hel.jpg'
       alt='' width='600'>
 
-    <img src='https://res.cloudinary.com/ferwatty0/image/upload/v1652467785/portafolio%20web/IMG_2743_etqow2.jpg' alt=''
-      width='600'>
+    <img src='https://res.cloudinary.com/ferwatty0/image/upload/v1652467785/portafolio%20web/IMG_2743_etqow2.jpg'
+      alt=''>
+
+
   </div>
 
   <div class="footer">

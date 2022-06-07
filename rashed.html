@@ -10,28 +10,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
-<body>
 
-  <nav>
-    <ul class="menu">
-      <a href="/">
-        <li>PORTAFOLIO</li>
-      </a>
-      <a href="#proyectos">
-        <li>PROYECTOS</li>
-      </a>
-      <a href="./contacto.html">
-        <li>ABOUT</li>
-      </a>
-      <li>2022</li>
-    </ul>
-  </nav>
+<body class="proyecto-i">
+  <div class="header">
+    <nav>
+      <ul class="menu">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="./index.html#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="./contacto.html">
+          <li>ABOUT</li>
+        </a>
+        <li>2022</li>
+      </ul>
+    </nav>
+  </div>
 
   <div x-data="{ open: false }" class="burger">
     <div class="buton-burger" x-on:click="open = !open" @click.away="open = false">
-      <img class="burger-mini" src="menu.png" alt="burger">
+      <img class="burger-mini" src="menu.svg" alt="burger">
     </div>
     <span x-show="open">
       <ul class="indice-burger">

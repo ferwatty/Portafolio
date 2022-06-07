@@ -10,22 +10,52 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
-<body>
+<body class="proyecto-i">
 
-  <nav>
-    <ul class="menu">
-      <a href="/">
-        <li>PORTAFOLIO</li>
-      </a>
-      <li>2022</li>
-    </ul>
-  </nav>
+  <div class="header">
+    <nav>
+      <ul class="menu">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="./index.html#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="./contacto.html">
+          <li>ABOUT</li>
+        </a>
+        <li>2022</li>
+      </ul>
+    </nav>
+  </div>
+
+  <div x-data="{ open: false }" class="burger">
+    <div class="buton-burger" x-on:click="open = !open" @click.away="open = false">
+      <img class="burger-mini" src="menu.svg" alt="burger">
+    </div>
+    <span x-show="open">
+      <ul class="indice-burger">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="/contacto.html">
+          <li>ABOUT</li>
+        </a>
+        </li>
+      </ul>
+    </span>
+  </div>
+
 
 
   <div class="home1">
-    <h1>CONTACTO</h1>
+    <h1>ABOUT</h1>
     <button class="atras" onclick="window.history.back()"><svg class="back" xmlns="http://www.w3.org/2000/svg"
         class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />

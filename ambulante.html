@@ -10,18 +10,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <body>
 
-  <nav>
-    <ul class="menu">
-      <a href="/">
-        <li>PORTAFOLIO</li>
-      </a>
-      <li>2022</li>
-    </ul>
-  </nav>
+  <div class="header">
+    <nav>
+      <ul class="menu">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="./index.html#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="./contacto.html">
+          <li>ABOUT</li>
+        </a>
+        <li>2022</li>
+      </ul>
+    </nav>
+  </div>
+
+  <div x-data="{ open: false }" class="burger">
+    <div class="buton-burger" x-on:click="open = !open" @click.away="open = false">
+      <img class="burger-mini" src="menu.svg" alt="burger">
+    </div>
+    <span x-show="open">
+      <ul class="indice-burger">
+        <a href="/">
+          <li>PORTAFOLIO</li>
+        </a>
+        <a href="#proyectos">
+          <li>PROYECTOS</li>
+        </a>
+        <a href="/contacto.html">
+          <li>ABOUT</li>
+        </a>
+        </li>
+      </ul>
+    </span>
+  </div>
+
 
   <div class="home">
     <h1>AMBULANTE</h1>
@@ -34,12 +64,11 @@
       src='https://images.unsplash.com/photo-1649829809465-d358fce60ebd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTIxOTIzNzk&ixlib=rb-1.2.1&q=80&w=400'
       alt='' width='800' height='450' lazy>
     <div class="descripcion">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit id voluptates illum. Accusantium ea excepturi
-        nisi, quae voluptatibus blanditiis sint laborum, quod, eius architecto itaque nesciunt maiores voluptatum alias
-        tempore? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit id voluptates illum. Accusantium ea
-        excepturi
-        nisi, quae voluptatibus blanditiis sint laborum, quod, eius architecto itaque nesciunt maiores voluptatum alias
-        tempore?</p>
+      <p>El objetivo de este proyecto fue diseñar la identidad web de la Gira Itinerante de Cine Documental,
+        Ambulante16. Este enfoque web giró en torno al interés de Ambulante hacia el cine. Para el proyecto, fue
+        fundamental entender y desarrollar una estructura y jerarquización de la información accesible para una fácil
+        navegación de lxs usuarixs. Incluye igualmente el diseño de las redes sociales con el objetivo de fortalecer la
+        identidad y tener más impacto en su visualización.</p>
     </div>
 
     <img src='https://res.cloudinary.com/ferwatty0/image/upload/v1653680814/ambulante_gjl5yf.png' alt=''>
