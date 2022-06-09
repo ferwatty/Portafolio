@@ -105,7 +105,7 @@ a::after {
 }
 
 .menu a:hover::after {
-  content: ' ';
+  content: " ";
   background-color: #000000;
   position: absolute;
   width: 103%;
@@ -117,7 +117,7 @@ a::after {
 }
 
 .contacto a:hover::after {
-  content: ' ';
+  content: " ";
   background-color: #000000;
   position: absolute;
   width: 103%;
@@ -141,7 +141,6 @@ a::after {
   transition: var(--transition-links);
 } */
 
-
 .atras .back,
 .info {
   color: rgb(0, 0, 0);
@@ -152,7 +151,6 @@ a::after {
 .info:hover {
   transform: scale(1.2);
 }
-
 
 /* Variables */
 :root {
@@ -193,9 +191,7 @@ h6 {
   font-family: var(--font-headings);
 }
 
-
 .header {
-
   background-color: #ffffff;
   z-index: 2;
   position: fixed;
@@ -226,7 +222,6 @@ h6 {
   border-bottom: 1px solid black;
   height: 30px;
 }
-
 
 .grid {
   display: grid;
@@ -358,7 +353,6 @@ h6 {
     padding: 40px;
     column-count: 2;
   }
-
 }
 
 /* MOVIL */
@@ -386,13 +380,7 @@ h6 {
   .menu {
     display: none;
   }
-
 }
-
-
-
-
-
 
 .proyecto1 {
   margin-top: 40px;
@@ -447,12 +435,16 @@ h6 {
   margin-right: 80px;
   position: relative;
   width: auto;
-  height: 350px;
+  height: 100vh;
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
   display: flex;
+}
+
+.contacto-grid p {
+  padding: 20px;
 }
 
 .contacto-grid img {
@@ -464,7 +456,7 @@ h6 {
 @media screen and (max-width: 600px) {
   .contacto-grid {
     display: block;
-    height: 450px;
+    height: 100vh;
   }
 
   .contacto-grid img {
@@ -473,10 +465,10 @@ h6 {
 
   .contacto-grid p {
     /* height: 200px; */
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 100px;
   }
 }
 
