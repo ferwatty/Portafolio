@@ -454,6 +454,7 @@ h6 {
   .contacto-grid {
     display: block;
     margin-bottom: 50px;
+    margin: 0px;
   }
 
   .contacto-grid img {
@@ -462,7 +463,7 @@ h6 {
 
   .contacto-grid p {
     /* height: 200px; */
-    padding: 20px;
+    padding: 30px;
 
     justify-content: center;
     align-items: center;
